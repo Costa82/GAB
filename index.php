@@ -3,7 +3,7 @@ session_start();
 require_once 'core/Connection.php';
 
 // Incluimos automaticamente el model que sea necesario
-function __autoload($class)
+function my_autoloader($class)
 {
     require_once ("models/$class.php");
 }
@@ -16,7 +16,7 @@ $map = array(
         'privada' => false
     ),
     
-    // Páginas de error
+    // PÃ¡ginas de error
     'page404' => array(
         'controller' => 'ControladorPaginas',
         'action' => 'page404',
