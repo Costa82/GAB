@@ -2312,9 +2312,10 @@ class PHPMailer {
 }
 
 class phpmailerException extends Exception {
-  public function errorMessage() {
-    $errorMsg = '<strong>' . $this->getMessage() . "</strong><br />\n";
-    return $errorMsg;
-  }
+    public function errorMessage() {
+        $errorMsg = '<strong>' . $this->getMessage() . "</strong><br />\n";
+        return $errorMsg;
+    }
 }
+
 ?>

@@ -2,7 +2,7 @@
 require_once './config/Validaciones.php';
 
 /**
- * Controlador de gestiÃ³n de usuarios
+ * Controlador de gestión de usuarios
  */
 class ControladorUsuarios
 {

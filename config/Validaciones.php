@@ -33,8 +33,8 @@ function validacion($num)
 }
 
 /**
- * La esContrasena debe tener al entre 4 y 8 caracteres, al menos un dígito, al menos una minúscula y al menos una mayúscula.
- * No puede tener otros s�mbolos.
+ * La esContrasena debe tener al entre 4 y 8 caracteres, al menos un dÃ­gito, al menos una minÃºscula y al menos una mayÃºscula.
+ * No puede tener otros sï¿½mbolos.
  *
  * @param
  *            $pass
@@ -51,7 +51,7 @@ function esContrasena($pass)
 }
 
 /**
- * Función que valida que el teléfono no sea raro
+ * FunciÃ³n que valida que el telÃ©fono no sea raro
  *
  * @param
  *            $value
@@ -69,14 +69,14 @@ function validarTelefono($value)
 }
 
 /**
- * Función que compara la dos contraseñas que introduce el usuario por el formulario cuando tiene la opción de
+ * FunciÃ³n que compara la dos contraseÃ±as que introduce el usuario por el formulario cuando tiene la opciÃ³n de
  * modificar la contrasena
  *
  * @param
  *            $passNueva
  * @param
  *            $passRep
- * @return boolean true si ambas coinciden. False si la contrase�a repetida no es igual que la contraseña nueva
+ * @return boolean true si ambas coinciden. False si la contraseï¿½a repetida no es igual que la contraseÃ±a nueva
  */
 function validarContrasena($passNueva, $passRep)
 {
@@ -88,14 +88,14 @@ function validarContrasena($passNueva, $passRep)
 }
 
 /**
- * Se valida el nick que tiene que tener de 4 a 8 caracteres, letras ó números
+ * Se valida el nick que tiene que tener de 4 a 8 caracteres, letras Ã³ nÃºmeros
  *
  * @param
  *            $nick
  */
 function esNick($nick)
 {
-	if (preg_match("/^[A-Z \-áéíóúÁÉÍÓÚñÑ0-9.]{4,8}$/i", $nick)) {
+	if (preg_match("/^[A-Z \-Ã¡Ã©Ã­Ã³ÃºÃ�Ã‰Ã�Ã“ÃšÃ±Ã‘0-9.]{4,8}$/i", $nick)) {
 		return true;
 	} else {
 		return false;
@@ -103,8 +103,8 @@ function esNick($nick)
 }
 
 /**
- * Un nombre ó apellido es válido si tiene un mímimo de 3 caracteres y un máximo de 20
- * Además, que no empiece por números,puede contener espacios en blanco y que no contenga caracteres especiales
+ * Un nombre Ã³ apellido es vÃ¡lido si tiene un mÃ­mimo de 3 caracteres y un mÃ¡ximo de 20
+ * AdemÃ¡s, que no empiece por nÃºmeros,puede contener espacios en blanco y que no contenga caracteres especiales
  *
  * @param
  *            $nombre
@@ -113,10 +113,10 @@ function esNick($nick)
 function esNombreValido($nombre)
 {
 	/**
-	 * Que no empiece por números,puede contener espacios en blanco y que no contenga caracteres especiales,
-	 * un mímimo de 3 caracteres y un máximo de 20
+	 * Que no empiece por nÃºmeros,puede contener espacios en blanco y que no contenga caracteres especiales,
+	 * un mÃ­mimo de 3 caracteres y un mÃ¡ximo de 20
 	 */
-	if (preg_match("/^[A-Z \-áéíóúÁÉÍÓÚñÑ\\s]{3,20}/i", $nombre)) {
+	if (preg_match("/^[A-Z \-Ã¡Ã©Ã­Ã³ÃºÃ�Ã‰Ã�Ã“ÃšÃ±Ã‘\\s]{3,20}/i", $nombre)) {
 		return true;
 	} else {
 

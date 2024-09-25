@@ -8,7 +8,7 @@ class ControladorPaginas
 {
 
 	/**
-	 * M√©todo que llama a la acci√≥n inicio
+	 * MÈtodo que llama a la acciÛn inicio
 	 */
 	public function inicio()
 	{
@@ -22,7 +22,7 @@ class ControladorPaginas
 	}
 	
 	/**
-	 * M√©todo para cargar la p√°gina de error 404
+	 * MÈtodo para cargar la p·gina de error 404
 	 */
 	public function page404()
 	{
